@@ -35,7 +35,7 @@ docker exec -it ollama /bin/bash
 ollama pull mistral:instruct 
 ollama pull llama3.2:1b
 
-ollama pull deepseek-r1:7b
+ollama pull deepseek-r1:1.5b
 
 ```
 
@@ -47,7 +47,7 @@ ollama list
 - remove a model
 
 ```bash
-ollama rm llama3
+ollama rm deepseek-r1:7b
 ```
 You can use any other method to load load a model.
 
