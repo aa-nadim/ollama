@@ -35,7 +35,7 @@ docker exec -it ollama /bin/bash
 ollama pull mistral:instruct 
 ollama pull llama3.2:1b
 
-ollama pull gemma2:2b
+ollama pull deepseek-r1:7b
 
 ```
 
@@ -50,3 +50,7 @@ ollama list
 ollama rm llama3
 ```
 You can use any other method to load load a model.
+
+Clean up your HDD To free up system HDD space, please use the following command. It will delete unnecessary Docker images, volumes, networks, and cached Docker objects:
+
+`docker system prune -a --volumes`
