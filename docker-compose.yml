@@ -8,4 +8,7 @@ services:
     volumes:
       - ./ollama:/root/.ollama
     restart: unless-stopped
+    environment:
+      - OLLAMA_HOST=0.0.0.0
+      - OLLAMA_ORIGINS=*
     command: serve
